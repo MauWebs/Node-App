@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mau_Webs</title>
+</head>
+
+<body>
+    
+    <ul id="users"></ul>
+
+    <script>
+
+const users = [
+            {
+                "user_name": "Mauricio",
+                "user_lastname": "Vidal"
+            },
+            {
+                "user_name": "Morena",
+                "user_lastname": "Vidal"
+            }
+        ];
+
+        const userList = document.getElementById('users');
+
+        users.forEach(user => {
+            const listItem = document.createElement('li');
+            listItem.textContent = `${user.user_name} ${user.user_lastname}`;
+            userList.appendChild(listItem);
+        });
+
+</script>
+
+</body>
+
+</html>
